@@ -17,17 +17,19 @@ body{
     .tile{
         width: 48px;
         height: 48px;
-        border: solid lightgray 1px;
+        border: solid rgb(139, 139, 139) 1px;
         font-size: 20px;
         font-weight: bold;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    .tile-filled{
+        background-color: rgb(241, 241, 241);
+    }
     #numbers{
         width: 450px;
         height: 50px;
-        background-color: yellow;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -42,5 +44,18 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+    }
+    .numbered-tile{
+        background-color: rgb(241, 241, 241);
+    }
+    .number-selected{
+        background-color: gray;
+    }
+    .horizontal-line{
+        border-bottom: 2px solid black !important;
+    }
+    .vertical-line{
+        border-right: 2px solid black !important;
     }
 }
